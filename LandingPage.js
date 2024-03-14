@@ -11,7 +11,7 @@ const LandingPage = () => {
           style={styles.logo}
           source={{ uri: 'https://res.cloudinary.com/dfwchdncf/image/upload/v1698424520/logo_cunpzc.jpg' }}
         />
-        <Text style={styles.appName}>GO ECO</Text>
+        {/* <Text style={styles.appName}>GO ECO</Text> */}
       </View>
       <View style={styles.buttonContainer}>
         <TouchableOpacity style={styles.button} onPress={() => console.log('Navigate to Sign In')}>
@@ -47,21 +47,17 @@ const styles = StyleSheet.create({
     marginBottom: 30,
   },
   logo: {
-    width: 100,
-    height: 100,
-    borderRadius: 50,
+    width: 220,
+    height: 200,
+    borderRadius: 20,
     borderWidth: 3,
     borderColor: 'white',
     
     position:"relative",
+    marginBottom:-400,
+    marginLeft:20,
   },
-  appName: {
-    fontSize: 30,
-    fontFamily: 'cursive',
-    marginLeft: 30,
-    // color:'white',
-    
-  },
+  
   buttonContainer: {
     position: 'absolute',
     bottom: 20,
@@ -72,11 +68,14 @@ const styles = StyleSheet.create({
   },
   button: {
     padding: 10,
+    paddingLeft:20,
+    paddingRight:20,
     backgroundColor: 'white',
     color: 'black',
     textDecorationLine: 'none',
-    margin: 10,
-    borderRadius: 20,
+    margin: 20,
+    borderRadius: 40,
+    borderWidth:2,
     fontSize: 18,
     borderColor: '#b0aca2',
   },
@@ -92,6 +91,7 @@ const styles = StyleSheet.create({
 });
 
 export default LandingPage;
+
 
 
 
